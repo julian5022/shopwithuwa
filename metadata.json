@@ -1,0 +1,6 @@
+{
+  "name": "shopwithuwa Luxury Fashion & Beauty",
+  "description": "Abuja-based fashion and beauty house by Uwaila Imafidon Glory offering luxury wigs, ready-to-wear attires, beauty skincare & fragrances, and custom-made bespoke tailoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
