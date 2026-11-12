@@ -77,17 +77,27 @@ export default function App() {
   const totalInquiryCount = inquiryItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <div className="min-h-screen bg-[#080808] text-white flex flex-col font-sans selection:bg-pink-500 selection:text-white">
+    <div className="min-h-screen bg-[#12050f] text-white flex flex-col font-sans selection:bg-pink-500 selection:text-white relative overflow-x-hidden">
+      {/* Global Ambient Pink Luxury Lighting Mesh */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-b from-pink-500/25 via-pink-600/10 to-transparent blur-[140px] rounded-full" />
+        <div className="absolute top-[30%] -left-48 w-[650px] h-[650px] bg-pink-500/15 blur-[160px] rounded-full" />
+        <div className="absolute top-[60%] -right-48 w-[650px] h-[650px] bg-rose-500/15 blur-[160px] rounded-full" />
+        <div className="absolute -bottom-32 left-1/3 w-[800px] h-[500px] bg-pink-500/15 blur-[150px] rounded-full" />
+      </div>
+
       {/* Top Navbar */}
-      <Navbar
-        activeTab={activeTab}
-        setActiveTab={handleNavigate}
-        inquiryCount={totalInquiryCount}
-        openInquiryDrawer={() => setIsDrawerOpen(true)}
-      />
+      <div className="relative z-40">
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={handleNavigate}
+          inquiryCount={totalInquiryCount}
+          openInquiryDrawer={() => setIsDrawerOpen(true)}
+        />
+      </div>
 
       {/* Main Content Area Based on Active Tab */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         {activeTab === 'home' && (
           <>
             <Hero onNavigate={handleNavigate} />
