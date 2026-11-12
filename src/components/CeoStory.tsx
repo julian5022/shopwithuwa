@@ -32,7 +32,7 @@ export const CeoStory: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             <div className="relative rounded-3xl overflow-hidden border-2 border-pink-400 shadow-[0_0_45px_rgba(244,114,182,0.35)] bg-zinc-900 group">
               <img
-                src="/src/assets/images/ceo_uwaila_glory.jpeg"
+                src="/images/ceo_uwaila_glory.jpeg"
                 alt="Uwaila Imafidon Glory - Founder & CEO of shopwithuwa"
                 className="w-full h-[500px] object-cover object-top group-hover:scale-102 transition-transform duration-500"
                 referrerPolicy="no-referrer"

@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden border-2 border-pink-400 shadow-[0_0_50px_rgba(244,114,182,0.35)] bg-zinc-950 group">
               <img
-                src="/src/assets/images/wigs_luxury_collection_1794484910698.jpg"
+                src="/images/wigs_luxury_collection_1794484910698.jpg"
                 alt="shopwithuwa Luxury Hair and Haute Couture Campaign"
                 className="w-full h-[480px] sm:h-[540px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
